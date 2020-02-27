@@ -1,0 +1,60 @@
+$font-stack: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% $font-stack;
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+.header {
+  height: 80vh;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 255, 255, 0.4),
+      rgba(165, 42, 42, 0.4)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover; //wherever the with, will always try to fix inside the box.
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0, 100% 70vh, 0 100%, 0 0);
+
+  /*Small logo on the top left of the page*/
+  .logo-box {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+
+    .logo {
+      height: 2rem;
+    }
+
+    .logo:hover {
+      height: 3rem;
+      transition: 1s ease-in;
+    }
+  }
+  /*Heading 1 in the center of the header*/
+  .heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .heading-primary-main {
+    display: block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+  }
+  .heading-primary-sub {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1.1rem;
+  }
+}
