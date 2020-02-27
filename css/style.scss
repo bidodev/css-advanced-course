@@ -40,21 +40,28 @@ body {
       transition: 1s ease-in;
     }
   }
-  /*Heading 1 in the center of the header*/
-  .heading-primary {
-    color: #fff;
-    text-transform: uppercase;
-  }
-  .heading-primary-main {
-    display: block;
-    font-size: 4rem;
-    font-weight: 400;
-    letter-spacing: 2rem;
-  }
-  .heading-primary-sub {
-    display: block;
-    font-size: 1.4rem;
-    font-weight: 500;
-    letter-spacing: 1.1rem;
+  /* Text in the center of the header */
+  .text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .heading-primary {
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+    }
+    .heading-primary-main {
+      display: block;
+      font-size: 4rem;
+      font-weight: 400;
+      letter-spacing: 2rem;
+    }
+    .heading-primary-sub {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: 1.1rem;
+    }
   }
 }

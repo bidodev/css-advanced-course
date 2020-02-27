@@ -21,7 +21,7 @@ body {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70vh, 0 100%, 0 0);
           clip-path: polygon(0% 0%, 100% 0, 100% 70vh, 0 100%, 0 0);
   /*Small logo on the top left of the page*/
-  /*Heading 1 in the center of the header*/
+  /* Text in the center of the header */
 }
 
 .header .logo-box {
@@ -40,19 +40,27 @@ body {
   transition: 1s ease-in;
 }
 
-.header .heading-primary {
-  color: #fff;
+.header .text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header .text-box .heading-primary {
+  color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
 }
 
-.header .heading-primary-main {
+.header .text-box .heading-primary-main {
   display: block;
   font-size: 4rem;
   font-weight: 400;
   letter-spacing: 2rem;
 }
 
-.header .heading-primary-sub {
+.header .text-box .heading-primary-sub {
   display: block;
   font-size: 1.4rem;
   font-weight: 500;
