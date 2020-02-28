@@ -13,8 +13,8 @@ body {
 
 .header {
   height: 80vh;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(165, 42, 42, 0.4))), url(../img/hero.jpg);
-  background-image: linear-gradient(to left bottom, rgba(255, 255, 255, 0.4), rgba(165, 42, 42, 0.4)), url(../img/hero.jpg);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(19, 73, 14, 0.8))), url(../img/hero.jpg);
+  background-image: linear-gradient(to left bottom, rgba(255, 255, 255, 0.3), rgba(19, 73, 14, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -40,11 +40,13 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .header .text-box .heading-primary {
   color: rgba(248, 245, 245, 0.8);
   text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 
 .header .text-box .heading-primary-main {
@@ -71,6 +73,16 @@ body {
   text-decoration: none;
   padding: 1rem 2.5rem;
   display: inline-block;
+}
+
+.header .text-box .btn:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.header .text-box .btn:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 
 .header .text-box .btn-white {
