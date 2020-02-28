@@ -65,6 +65,19 @@ body {
           animation: moveInRight 1s ease-out;
 }
 
+.header .text-box .btn:link,
+.header .text-box .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  display: inline-block;
+}
+
+.header .text-box .btn-white {
+  background-color: #fff;
+  color: #777;
+}
+
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
