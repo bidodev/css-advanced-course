@@ -116,7 +116,6 @@ body {
   line-height: 1.5;
   color: #777;
   padding: 3rem;
-  background-color: beige;
 }
 
 .heading-primary {
@@ -276,6 +275,7 @@ body {
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
+  border-radius: 2px;
 }
 
 .btn-text:active {
@@ -284,6 +284,51 @@ body {
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.composition {
+  position: relative;
+}
+
+.composition__photo {
+  width: 55%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 0;
+  outline-offset: 1.5rem;
+}
+
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+
+.composition__photo:hover {
+  -webkit-transform: scale(1.1) translateY(-0.5rem);
+          transform: scale(1.1) translateY(-0.5rem);
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  outline: 1.5rem solid #55c57a;
+  z-index: 1;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .header {
