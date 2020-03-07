@@ -104,6 +104,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
