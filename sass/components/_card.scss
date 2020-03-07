@@ -31,6 +31,21 @@
           rgba($color-secondary-dark, $alpha: 0.6)
         );
       }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, $alpha: 0.8),
+          rgba($color-primary-dark, $alpha: 0.6)
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-tertiary-light, $alpha: 0.8),
+          rgba($color-tertiary-dark, $alpha: 0.6)
+        );
+      }
     }
   }
 
@@ -57,10 +72,20 @@
         url(../img/nat-5.jpg);
     }
     &--2 {
-      background-image: url(../img/nat-5-img);
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, $alpha: 1),
+          rgba($color-primary-dark, $alpha: 1)
+        ),
+        url(../img/nat-6.jpg);
     }
     &--3 {
-      background-image: url(../img/nat-5-img);
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-tertiary-light, $alpha: 1),
+          rgba($color-tertiary-dark, $alpha: 1)
+        ),
+        url(../img/nat-7.jpg);
     }
   }
   &__heading {
@@ -86,6 +111,20 @@
         rgba($color-secondary-dark, $alpha: 0.85)
       );
     }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, $alpha: 0.85),
+        rgba($color-primary-dark, $alpha: 0.85)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, $alpha: 0.85),
+        rgba($color-tertiary-dark, $alpha: 0.85)
+      );
+    }
   }
 
   &__details {
@@ -105,5 +144,27 @@
         }
       }
     }
+  }
+
+  //Back side style
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+  }
+  &__price-box {
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+  &__price-only {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
