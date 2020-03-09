@@ -573,7 +573,6 @@ body {
           backface-visibility: hidden;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  overflow: hidden;
 }
 
 .story__text {
@@ -727,5 +726,17 @@ body {
 .section-stories {
   position: relative;
   padding: 15rem 0;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.book {
+  background-image: url(../img/nat-10.jpg);
+  background-size: cover;
+  height: 50rem;
 }
 /*# sourceMappingURL=style.css.map */
