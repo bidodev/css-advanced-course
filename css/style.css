@@ -611,6 +611,23 @@ body {
           filter: blur(3px) brightness(80%);
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.6))), url(../img/hero.jpg);
@@ -708,7 +725,7 @@ body {
 }
 
 .section-stories {
+  position: relative;
   padding: 15rem 0;
-  background-color: #f7f7f7;
 }
 /*# sourceMappingURL=style.css.map */
